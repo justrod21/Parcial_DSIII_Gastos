@@ -2,18 +2,18 @@ package com.proyecto.gasto.model;
 
 import java.time.LocalDate;
 
-public class Gasto {
+public class GastoModel {
 
-    private Long id;
+    private int id;
     private String descripcion;
     private double monto;
     private String categoria;
     private LocalDate fecha;
 
-    public Gasto() {
+    public GastoModel() {
     }
 
-    public Gasto(Long id, String descripcion, double monto, String categoria, LocalDate fecha) {
+    public GastoModel(int id, String descripcion, double monto, String categoria, LocalDate fecha) {
         this.id = id;
         this.descripcion = descripcion;
         this.monto = monto;
@@ -21,11 +21,11 @@ public class Gasto {
         this.fecha = fecha;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
